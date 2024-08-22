@@ -12,3 +12,8 @@ document.addEventListener("DOMContentLoaded", function(){
         window.location = "products.html"
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    if (!localStorage.getItem('loggedInUser')) {
+      location.href = "login.html";
+    }
+  });
